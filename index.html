@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Betu ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- LOADING SCREEN -->
+
+<div id="loader">
+
+<div class="loader-card">
+
+<div class="heart-loader">
+❤️
+</div>
+
+<h2>Preparing your surprise...</h2>
+
+<div class="progress">
+
+<div class="bar"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FLOATING HEARTS -->
+
+<div class="floating-hearts">
+
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+
+</div>
+
+<!-- PASSWORD -->
+
+<section id="lockScreen">
+
+<div class="glass">
+
+<div class="lock">
+
+🔒
+
+</div>
+
+<h1>Hello Betu</h1>
+
+<p>
+
+Before you enter...
+
+There's a tiny surprise waiting for you sundlu
+
+</p>
+<p>  Password hint : My DOB - DDMMYYYY </p>
+<input
+type="password"
+id="password"
+placeholder="Enter Password">
+
+<button onclick="unlock()">
+
+Unlock ✨
+
+</button>
+
+<p id="wrong"></p>
+
+</div>
+
+</section>
+
+<!-- WEBSITE -->
+
+<main id="website">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="glass hero-card">
+
+<h1>
+
+Happy Birthday
+
+</h1>
+
+<h2>
+
+Betu 🤍
+
+</h2>
+
+<p>
+
+I wanted to make something different...
+
+So here's a tiny website made only for you.
+
+Keep scrolling. 😊
+
+</p>
+
+<div class="scroll">
+
+↓
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CAMERA -->
+
+<section class="camera-section">
+
+<h2>
+
+Memory Camera
+
+</h2>
+
+<p>
+
+Tap the camera four times.
+
+Each click unlocks a memory.
+
+</p>
+
+<div id="camera">
+
+<div class="lens"></div>
+
+<div class="flash"></div>
+
+<div class="button-dot"></div>
+
+</div>
+
+<div id="gallery">
+
+<div class="photo-card">
+
+<img src="https://i.ibb.co/YxxtMCj/Whats-App-Image-2026-07-03-at-9-18-15-PM.jpg" >
+
+<p>
+
+One of my favourite smiles.
+
+</p>
+
+</div>
+
+<div class="photo-card">
+
+<img src="https://i.ibb.co/rRdpBV3W/Whats-App-Image-2026-07-03-at-9-18-16-PM.jpg">
+
+<p>
+
+Still one of the cutest pictures.
+
+</p>
+
+</div>
+
+<div class="photo-card">
+
+<img src="https://i.ibb.co/FL2BmvTk/Whats-App-Image-2026-07-03-at-9-18-16-PM-1.jpg">
+
+<p>
+
+Couldn't leave this one out.
+
+</p>
+
+</div>
+
+<div class="photo-card">
+
+<img src="https://i.ibb.co/BVF1rzHG/Whats-App-Image-2026-07-03-at-9-18-15-PM-1.jpg">
+
+<p>
+
+Definitely saved the best for last.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CAKE -->
+
+<section class="cake-section">
+
+<h2>
+
+Birthday Cake
+
+</h2>
+
+<p>
+
+Tap the cake.
+
+</p>
+
+<div id="cake">
+
+<div class="layer top"></div>
+
+<div class="layer middle"></div>
+
+<div class="layer bottom"></div>
+
+<div class="candle"></div>
+
+<div class="flame"></div>
+
+</div>
+
+<div id="wishes">
+
+<div class="wish">
+
+🌸 I hope this year brings you lots of happiness.
+
+</div>
+
+<div class="wish">
+
+✨ I hope every dream gets closer.
+
+</div>
+
+<div class="wish">
+
+🤍 Stay exactly the way you are.
+
+</div>
+
+<div class="wish">
+
+🌈 Keep smiling every day.
+
+</div>
+
+<div class="wish">
+
+🎈 Stay healthy and happy always.
+
+</div>
+
+<div class="wish">
+
+❤️ Happy Birthday Betu.
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LETTER -->
+
+<section class="letter-section">
+
+<div class="glass letter">
+
+<h2>
+
+A Small Note 💌
+
+</h2>
+
+<p id="typing">
+
+Sometimes little things carry the biggest feelings.
+
+I just wanted to make something that could make you smile today.
+
+I hope this birthday becomes one of your happiest memories.
+
+Happy Birthday, Betu. 🤍
+
+</p>
+
+</div>
+
+</section>
+
+<!-- GIFT -->
+
+<section class="gift-section">
+
+<h2>
+
+One Last Surprise
+
+</h2>
+
+<div id="gift">
+
+🎁
+
+</div>
+
+<p class="gift-text">
+
+Tap the gift.
+
+</p>
+
+<div id="giftMessage">
+
+🐻
+
+<br><br>
+
+A hug in teddy form.
+
+</div>
+
+</section>
+
+<!-- END -->
+
+<section class="end">
+
+<div class="glass end-card">
+
+<h1>
+
+Happy Birthday ❤️
+
+</h1>
+
+<p>
+
+Take care of yourself.
+
+Keep smiling.
+
+And never stop being you.
+
+</p>
+
+<h3>
+
+Made with ❤️ by Anuj
+
+</h3>
+
+</div>
+
+<div class="stars">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
